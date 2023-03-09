@@ -1,0 +1,88 @@
+:root {
+    --dark_cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    /*### Neutral*/
+    --very_dark_blue: hsl(212, 21%, 14%);
+    --dark_grayish_blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    /* Mobile: 375px*/
+    /* */
+    /* Tipografia*/
+    /*body */
+    --font_size_paragraph: 14px;
+    --font-family-ms: 'Montserrat', sans-serif;
+    --font-family-fr: 'Fraunces', serif;
+    /*Fuente */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--cream);
+}
+
+.contenedor_producto {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 3%;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.contenedor_producto img {
+    width: 100%;
+}
+.detalles_producto {
+    width: 90%;
+    margin: 15px auto;
+}
+.detalles_producto_categoria {
+    font-family: var(--font-family-ms);
+    letter-spacing: 2px;
+    font-size: var(--font_size_paragraph);
+    color: var(--dark_grayish_blue);
+}
+.detalles_producto h2 {
+    font-family: var(--font-family-fr);
+    font-size: 32px;
+    font-weight: 700;
+}
+.detalles_producto p {
+    font-family: var(--font-family-ms);
+    color: var(--dark_grayish_blue);
+    font-size: var(--font_size_paragraph);
+    font-weight: 600;
+}
+.precio_producto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 24px 0;
+}
+.precio_producto span:nth-child(1) {
+    color: var(--dark_cyan);
+    font-family: var(--font-family-fr);
+    font-size: 32px;
+}
+.precio_producto span:nth-child(2) {
+    color: var(--dark_grayish_blue);
+    font-family: var(--font-family-fr);
+    font-size: 14px;
+    padding-left: 20px;
+}
+.detalles_producto button {
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    border: transparent;
+    color: var(--white);
+    background-color: var(--dark_cyan);
+    font-family: var(--font-family-ms);
+    font-weight: 700;
+}
+.detalles_producto button img {
+    width: 5%;
+    padding-right: 3px;
+}
