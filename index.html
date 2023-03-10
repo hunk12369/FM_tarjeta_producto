@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/desktop1440.css" media="screen and (min-width: 1440px)">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,10 @@
 
 <body>
   <div class="contenedor_producto">
-    <img src="./images/image-product-mobile.jpg" alt="">
+    <picture>
+      <source media="screen and (min-width: 1440px)" srcset="./images/image-product-desktop.jpg">
+      <img src="./images/image-product-mobile.jpg" alt="">
+    </picture>
     <div class="detalles_producto">
       <p class="detalles_producto_categoria">PERFUME</p>
       <h2>Gabrielle Essence Eau De Parfum</h2>
@@ -47,11 +51,8 @@
     </div>
   </div>
 
+  
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>

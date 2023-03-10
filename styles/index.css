@@ -30,8 +30,13 @@ body {
     overflow: hidden;
 }
 
-.contenedor_producto img {
+.contenedor_producto picture {
+    width: 50%;
+}
+.contenedor_producto picture img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .detalles_producto {
     width: 90%;
